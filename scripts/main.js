@@ -18,19 +18,21 @@ $(document).ready(function (argument) {
 		if (qty.val() == '') alert('Enter quantity before confirming');
 		else {
 			var all = '';
+			
 			if(size.hasClass('all-product-size')){
                 var allsizes=(size.parent().parent().children().length)-1;
                 subtotal = subtotal * allsizes;
-                all ='All '+allsizes+' sizes';
+                all =' '+allsizes+' sizes';
 
 			}
 			 if (cup.val() == 'All') {
 				
 				var allcups = $(cup).children().length - 1;
 				subtotal = subtotal * allcups;
-				all = all+' & '+allcups + ' variations';
+				if(all!='')all=all+" & "; //check if product size is set to all
+				all = all+' '+allcups + ' variations';
 			}
-
+ 
 			var append = '<tr>' + '<td>' + productname.html() + ' ' + size.html() + ' ' + cup.val() + ' ' + all + '</td>' + '<td>' + qty.val() + '</td>' + '<td class="currency">' + price + '</td>' + '<td  class="subtotal currency">' + subtotal + '</td>' + ' <td class="cart-delete"><span onclick="deleteitem(this)">-</span></td> ' + '</tr>';
             cn=cn+1;
             $('.cart-notifications').html(cn);
