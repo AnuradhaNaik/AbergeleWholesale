@@ -21,14 +21,14 @@ $(document).ready(function (argument) {
 			if(size.hasClass('all-product-size')){
                 var allsizes=(size.parent().parent().children().length)-1;
                 subtotal = subtotal * allsizes;
-                all ="All "+allsizes+" sizes";
+                all ='All '+allsizes+' sizes';
 
 			}
 			 if (cup.val() == 'All') {
 				
 				var allcups = $(cup).children().length - 1;
 				subtotal = subtotal * allcups;
-				all = all+" & "+allcups + ' variations';
+				all = all+' & '+allcups + ' variations';
 			}
 
 			var append = '<tr>' + '<td>' + productname.html() + ' ' + size.html() + ' ' + cup.val() + ' ' + all + '</td>' + '<td>' + qty.val() + '</td>' + '<td class="currency">' + price + '</td>' + '<td  class="subtotal currency">' + subtotal + '</td>' + ' <td class="cart-delete"><span onclick="deleteitem(this)">-</span></td> ' + '</tr>';
