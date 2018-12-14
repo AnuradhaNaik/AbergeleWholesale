@@ -15,7 +15,7 @@ My solution:
 
 New Features: 
 •	You can order ALL cup variants for various product sizes increasing the convenience level and boosting overall revenue.
-•	Add a feature where you can order ALL product sizes with ALL cup variants.
+•	Add a feature where you can order ALL product sizes with ALL cup variants to which makes bulk ordering much simpler and profitable
 
 
 Potential updates: 
