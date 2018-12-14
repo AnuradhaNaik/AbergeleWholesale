@@ -29,7 +29,7 @@ $(document).ready(function (argument) {
 				
 				var allcups = $(cup).children().length - 1;
 				subtotal = subtotal * allcups;
-				if(all!='')all=all+" & "; //check if product size is set to all
+				if(all!='')all=all+' & '; //check if product size is set to all
 				all = all+' '+allcups + ' variations';
 			}
  
