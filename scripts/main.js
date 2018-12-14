@@ -22,10 +22,10 @@ $(document).ready(function (argument) {
 				all = 1;
 				all = $(cup).children().length - 1;
 				subtotal = subtotal * all;
-				all = all + " variations";
+				all = all + ' variations';
 			}
 
-			var append = "<tr>" + "<td>" + productname.html() + " " + size.html() + " " + cup.val() + " " + all + "</td>" + "<td>" + qty.val() + "</td>" + '<td class="currency">' + price + "</td>" + '<td  class="subtotal currency">' + subtotal + "</td>" + ' <td class="cart-delete"><span onclick="deleteitem(this)">-</span></td> ' + "</tr>";
+			var append = '<tr>' + '<td>' + productname.html() + ' ' + size.html() + ' ' + cup.val() + ' ' + all + '</td>' + '<td>' + qty.val() + '</td>' + '<td class="currency">' + price + '</td>' + '<td  class="subtotal currency">' + subtotal + '</td>' + ' <td class="cart-delete"><span onclick="deleteitem(this)">-</span></td> ' + '</tr>';
             cn=cn+1;
             $('.cart-notifications').html(cn);
             $('.cart-notifications').addClass('show');
