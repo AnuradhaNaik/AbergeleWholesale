@@ -229,14 +229,14 @@ footer {
   right: 0;
   z-index: 100;
   background: white;
-  height: 106%;
+  height: 100%;
   display: none;
   padding: 6%;
 }
 
 #cart-overview.open {
   display: block;
-  overflow-x: auto;
+  overflow: auto;
 }
 
 #checkout {
@@ -246,6 +246,7 @@ footer {
   cursor: pointer;
   background: white;
   margin: 7%;
+  margin-top: 3px;
   font-size: large;
   float: right;
 }
@@ -298,4 +299,10 @@ footer {
 }
 .open .cart-notifications.show{
   display: none;
+}
+.all-product-size{
+  margin-left:-13px;
+}
+.all-product-size:before{
+  content: "All Sizes";
 }
